@@ -1,5 +1,6 @@
 import { useState } from "react"
 import logo from '/222.png'
+import { Button } from "./Button"
 export const AppHeader = () => {
 
 const [now,setNow] = useState(new Date())
@@ -15,7 +16,7 @@ setInterval(()=>setNow(new Date()),1000)
               {now.toLocaleTimeString()}
             </div>
             <div>
-              <button>Меню</button>
+              <Button Ontypoy={()=>console.log(1)}>норм</Button>
             </div>
         </div>
     )
